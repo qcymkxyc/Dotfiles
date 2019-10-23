@@ -116,5 +116,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# JAVA配置
 export JAVA_HOME=/home/qcymkxyc/.local/lib/jre-8u221-linux-x64/jre1.8.0_221
 export PATH=${JAVA_HOME}/bin:${PATH}
+
+# PySpark配置
+export PYSPARK_DRIVER_PYTHON=/usr/bin/python3
+export PYSPARK_PYTHON=/usr/bin/python3

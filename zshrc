@@ -65,7 +65,9 @@ ZSH_THEME="spaceship"
 plugins=(
   git
   zsh-syntax-highlighting
+  zsh-autosuggestions
 )
+. /usr/share/autojump/autojump.sh
 
 source $ZSH/oh-my-zsh.sh
 
@@ -108,3 +110,7 @@ export PATH=${JAVA_HOME}/bin:${PATH}
 # Spark
 export SPARK_HOME=/home/qcymkxyc/.local/lib/spark-2.4.3-bin-hadoop2.7
 export PATH=$PATH:$SPARK_HOME/bin
+
+# PYSPARK
+export PYSPARK_DRIVER_PYTHON=/usr/bin/python3
+export PYSPARK_PYTHON=/usr/bin/python3

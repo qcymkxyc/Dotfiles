@@ -1,4 +1,6 @@
-set nu
+set nu "行号
+syntax on "语法高亮
+filetype on "文件类型识别
 
 call plug#begin('~/.vim/plugged')
 
@@ -25,6 +27,10 @@ Plug 'kien/ctrlp.vim'
 
 " 快速定位
 Plug 'easymotion/vim-easymotion'
+
+" Markdown
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 
 " 主题商店
 Plug 'flazz/vim-colorschemes'

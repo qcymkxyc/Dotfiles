@@ -120,6 +120,7 @@ fi
 export JAVA_HOME=/home/qcymkxyc/.local/lib/jre-8u221-linux-x64/jre1.8.0_221
 export PATH=${JAVA_HOME}/bin:${PATH}
 
-# PySpark配置
-export PYSPARK_DRIVER_PYTHON=/usr/bin/python3
-export PYSPARK_PYTHON=/usr/bin/python3
+# CUDA配置 
+export PATH=/usr/local/cuda-10.0/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64:$LD_LIBRARY_PATH
+
